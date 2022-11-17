@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/*Navbar*/  
+
+nav{
+   display: flex;
+   
+   justify-content: space-between;
+
+   margin-top: 20px;
+
+   align-items: center;
+
+   color: #202020;
+}
+.logo{
+    font-weight: 800;
+
+    font-size: 25px;
+    padding-left: 50px;
+
+   
+}
+.nav-itens{
+    list-style: none;
+
+    display: flex;
+}
+
+.nav-itens>li>a{
+    /* padding-right: 50px; */
+    margin-right: 50px;
+
+    color: #202020;
+
+    text-decoration: none ;
+    
+    position: relative;
+}
+
+.nav-itens>li>a::after{
+    content: " ";
+
+    width: 0%;
+
+    height:4px;
+
+    background-color: #000000;
+
+    position: absolute;
+
+    bottom: -5px;
+
+    left: 0;
+
+    transition: 0.4s ease-in-out;
+
+    
+}
+.nav-itens>li>a:hover::after{
+    width: 100%;
+    
+}
+
+.login{
+    padding: 10px 40px;
+
+    font-size: 15px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    color: #202020;
+
+    background-color: #dcdcdc;
+
+    cursor: pointer;
+
+    transition: 1s background;
+}
+
+.login:hover{
+    background-color: #a1a1a1;
+
+    transition: 1s background;
+}
+
+.cadastro{
+    padding: 10px 40px ;
+
+    font-size: 15px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    color: #fff;
+
+    background-color: #202020;
+
+    cursor: pointer;
+
+    transition: 1s background;
+    
+    
+    
+}
+
+.cadastro:hover{
+    background-color: #3d3d3d;
+
+    transition: 1s background;
+
+}
+
+/*Banner */
+
+.banner{
+    width: 100%;
+
+    height: 120vh;
+
+    background-image: url('../assets/CO_Wikimedia_user_Oren_Rozen_under_CC_BY-SA_2.0_--_1.jpg');
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    
+}
+.nivel{
+   display: flex;
+
+   justify-content: start;
+
+   padding-left: 150px;
+
+   align-items: flex-start;
+
+   width: 100%;
+
+   height: 100%;
+
+   background-color: rgba(255, 255, 255, 0.468);
+
+   position: relative
+}
+
+
+
+
+
+.b button {
+
+    text-align: center;
+
+    padding: 16px 32px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    cursor:pointer;
+
+    display: inline-block;
+
+    margin-top: 0x;
+
+    transition-duration: 0.4s;
+
+    background-color: #FF0000;
+
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    flex-direction: column-reverse;
+
+    border: none;
+    
+    color:white;
+}
+
+
+
+
+.b a{
+    text-decoration: none;
+
+    color: #fff; 
+}
+.pa{
+    
+}
+
+.b>h2{
+    margin-top: 150px;
+    font-weight: 500;
+    color: #FF0000;
+    font-weight: bold;
+
+}
+.b>h1{
+    font-weight: 700;
+    font-size: 5.1rem;
+}
+.b>p{
+    margin-bottom: 50px;
+
+}
+.sol_ver{
+    position: absolute ;
+
+    right: 0;
+    bottom: 0;
+
+   animation: sol 5s infinite;
+
+   width: 480px;
+
+  
+
+
+}
+
+.samurai{
+    position: relative;
+    
+    position: absolute;
+
+     right:  0px;
+
+    bottom: 0;
+
+    width: 340px;
+}
+
+@keyframes sol {
+    0%, 100%{
+        opacity: 1;
+    }  
+    50%{
+        opacity: 0.7;
+    } 
+    
+}
+
+.social{
+    margin: 50px 0;
+}
+
+.social .boxes, .box{
+    display: flex;
+}
+
+.box{
+    flex-direction: column;
+
+    align-items: center;
+
+    margin: 0 15px;
+}
+
+.box>h4{
+    margin: 15px 0;
+
+    color: #FF0000;
+
+}
+
+.box>p{
+    text-align: center;
+
+    color: #000000;
+
+
+}
+
+.box>img{
+    width: 170px;
+}
+
+
+/*Footer */
+
+footer{
+    background-color: #a1a1a1;
+
+    padding-top: 5em;
+
+    padding-bottom: 40px;
+
+    border-top: 5px solid #fff;
+}
+
+.companyfooter{
+    justify-content: center;
+}
