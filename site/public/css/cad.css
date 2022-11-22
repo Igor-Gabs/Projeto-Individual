@@ -36,9 +36,11 @@ body{
 
     background-image: url(../assets/tokyo.jpg);
 
+    
+
     background-size: cover;
 
-    background-position-y:-150px ;
+    /* background-position-y:-150px ; */
 }
 
 /*form*/
@@ -124,7 +126,12 @@ input:focus{
     height: 40px;
 
     cursor: pointer;
+
+    width: 100px;
 }
+
+
+
 
 #agreement{
     margin-right: 5px;

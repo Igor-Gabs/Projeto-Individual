@@ -21,8 +21,8 @@ var sqlServerConfig = {
 var mySqlConfig = {
     host: "localhost",
     database: "indi",
-    user: "root",
-    password: "AnJiGlM16102021",
+    user: "aluno",
+    password: "sptech",
 };
 
 function executar(instrucao) {
