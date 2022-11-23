@@ -127,13 +127,81 @@ nav{
 
 /*Banner*/
 
-.container1 h1{
+
+
+h2{
+
+    font-size: 40px;
+
+    width: 15vw;
+
+    background-color: #000000;
+
+    color: #fff;
+
+    margin-left: 560px;
+
+    margin-top: 20px;
+
+    display: flex;
+    
+    align-items: center;
+
+    justify-content: center;
+}
+/*  */
+.conteudo {
+
+margin-top: 80px;
+
+width: 40vw;
+
+background-color: #3d3d3d;
+
+color: #fff;
+
+border-radius: 40px;
+
+height: 50vh;
+
+padding: 20px;
+}
+/* Titulo */
+.titulo{
     display: flex;
 
     align-items: center;
-    
+
     justify-content: center;
+
+    padding: 20px;
+
+    font-size: 20px;
+
+
 }
+
+/* paragrafo */
+
+.p{
+   text-align: justify;
+}
+
+.banner{
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center ;
+
+    
+}
+/* Mudando tamanho das img */
+
+
+
+
+
 
 
 

@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/corvo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css./cult.css">
+    <link rel="stylesheet" href="./css/cult.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <title>Cultura</title>
 </head>
 <body>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
     <nav>
         <div class="logo">Karasu</div>
         <div class="links">
@@ -34,16 +37,80 @@
     </nav>
     <!--Final da NAVBAR!-->
 
-    <!--banner-->
+    
+    <main>
+        <h2>Cultura</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
 
-    <div class="banner1">
-        <div class="container1">
-            <h1>
-                Cultura Japonesa
-            </h1>
+                    <div class="banner">
+                        <div class="conteudo">
+                        
+                            <div class="titulo">
+                                <span>Religião</span>   
+                            </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore.</p>
+                        </div>
 
-            <div class="box1"></div>
+                        <div class="project-img">
+                            <img src="./assets/xintoismo.png" alt="Foto 01">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="titulo">
+                        <span>Periodo Edo/Xogunato</span>
+                        
+                     </div>
+                     <div class="banner">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore.</p>
+                        <div class="project-img">
+                            <img src="./assets/xogunato.jpg" alt="Foto 02"
+                            height="300 px">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="titulo">
+                        <span>Esportes</span>
+                        
+                     </div>
+                     <div class="banner">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore.</p>
+                        <div class="project-img">
+                            <img src="./assets/sumo.jpg" alt="Foto 03"
+                            height="300 px"    >
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-pagination"></div> -->
         </div>
-    </div>
+    </main>
+
+
 </body>
 </html>
+<script>
+    var swiper = new Swiper(".swiper",{
+        cssMode: true,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev", 
+        },
+        keyboard: true,
+    });
+</script>
