@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/votar.css">
+    <title>Votação</title>
+</head>
+<body>
+     <!--Navbar-->
+     <nav>
+        <div class="logo">Karasu</div>
+        <div class="links">
+            <ul class="nav-itens">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="">Sobre Nós</a>
+             </li>
+            <li>
+                <a href="cultura.html"> Cultura</a>
+            </li>
+        </ul>
+        </div>
+        <div class="buttom">
+            <a href="login.html"><button  class="login">Login</button></a>
+            <a href="cadastro.html"><button  class="cadastro">Cadastro</button></a>
+        </div>
+    </nav>
+    <!--Final da NAVBA
+
+       <!-- Votação -->
+       <div class="conteudo">
+        <div class="nivel">
+
+        <div class="titulo">
+            <h2>KARASU!</h2>
+            <p id="sub">Selecione qual você mais se identificou: </p>
+        </div>
+        <div class="select">
+            <select name="" id="sel_vot">
+                <option value="culinaria">Culinária</option>
+                <option value="religiao">Religião</option>
+                <option value="esportes">Esportes</option>
+                <option value="periodo edo">Período Edo</option>
+                <option value="animes/manga">Animes/Mangas</option>
+            </select>
+            <button>Votar!</button>
+        </div>
+        <div class="resultado">
+            <div class="box">
+                <p>O mais votado foi: </p>
+                <p id="mais_votado">Animes/Manga</p>
+                <p>votos: <span id="qtd_votos">10</span> </p>
+            </div>
+        </div>
+    </div>
+       </div>
+         
+    
+</body>
+</html>

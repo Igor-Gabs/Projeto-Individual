@@ -28,19 +28,37 @@ nav{
     font-weight: 800;
 
     font-size: 25px;
-    padding-left: 50px;
+
+    justify-content: start;
+
+    margin-left: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    width: 300px;
+
+    height: 100%;
 
    
 }
+
 .nav-itens{
     list-style: none;
 
     display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 50px;
 }
 
 .nav-itens>li>a{
     /* padding-right: 50px; */
-    margin-right: 50px;
+   /*  margin-right: 50px; */
 
     color: #202020;
 
@@ -71,6 +89,20 @@ nav{
 .nav-itens>li>a:hover::after{
     width: 100%;
     
+}
+
+.buttom{
+    width: 300px;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
 }
 
 .login{

@@ -17,6 +17,7 @@
     border: none;
 }
 
+
 input,label{
     display: block;
 
@@ -29,6 +30,12 @@ input:focus, label:focus{
 
 a{
     color:#FF0000;
+}
+
+.btn a {
+    color: white;
+
+    text-decoration: none;
 }
 
 body{

@@ -28,7 +28,18 @@ nav{
     font-weight: 800;
 
     font-size: 25px;
-    padding-left: 50px;
+
+    justify-content: start;
+
+    margin-left: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    width: 300px;
+
+    height: 100%;
 
    
 }
@@ -89,6 +100,20 @@ nav{
     cursor: pointer;
 
     transition: 1s background;
+}
+
+.buttom{
+    width: 300px;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
 }
 
 .login:hover{
