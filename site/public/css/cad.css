@@ -75,7 +75,7 @@ body{
 
 }
 
-form{
+.box_container{
     display: flex;
 
     flex-wrap: wrap;

@@ -11,10 +11,10 @@
 
     <div class="main-container">
         <h1>Crie sua conta. É grátis!</h1>
-        <form id="register-form" >
+        <div class="box_container" id="register-form" >
            <div class="full-box">
             <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Digite seu E-mail" data-min-length = "3">
+            <input type="text" name="email" id="email" placeholder="Digite seu E-mail" data-min-length = "3">
            </div> 
            
            <div class="half-box spacing">
@@ -49,7 +49,7 @@
             <button class="btn"><a href="./index.html">Voltar Início</a></button>
         </div>
 
-        </form>
+        </div>
     </div>
     <p class="error-validation template"></p>
     <script src="./js/funcoes.js"></script>
@@ -71,12 +71,7 @@
         var senhaVar = password.value;
         var confirmacaoSenhaVar = passconfirmation.value;
 
-        console.log(emailVar);
-        console.log(nomeVar);
-        console.log(sobrenomeVar);
-        console.log(senhaVar);
-        console.log(confirmacaoSenhaVar);
-
+        
         
         // Enviando o valor da nova input
         fetch("/usuarios/cadastrar", {
@@ -98,9 +93,9 @@
 
             if (resposta.ok) {
                
-                setTimeout(() => {
-                    window.location = "login.html";
-                }, "2000")
+                
+                    window.location = "./login.html";
+                
               
             } else {
                 throw ("Houve um erro ao tentar realizar o cadastro!");

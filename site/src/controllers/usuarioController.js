@@ -24,6 +24,56 @@ function listar(req, res) {
         );
 }
 
+
+function votacao(req, res) {
+    var voto = req.body.voto;
+
+    usuarioModel.votacao(voto)
+        .then(function (resultado) {
+                res.status(200).json(resultado);
+            
+        }).catch(
+            function (erro) {
+                console.log(erro);
+                console.log("Houve um erro ao realizar a consulta! Erro: ", erro.sqlMessage);
+                res.status(500).json(erro.sqlMessage);
+            }
+        );
+}
+
+function atualizarVoto(req, res) {
+    var voto = req.body.id;
+    var usuario = req.body.usuario;
+
+    usuarioModel.atualizarVoto(voto, usuario)
+        .then(function (resultado) {
+                res.status(200).json(resultado);
+            
+        }).catch(
+            function (erro) {
+                console.log(erro);
+                console.log("Houve um erro ao realizar a consulta! Erro: ", erro.sqlMessage);
+                res.status(500).json(erro.sqlMessage);
+            }
+        );
+}
+
+
+function analise(req, res) {
+    
+    usuarioModel.analise()
+        .then(function (resultado) {
+                res.status(200).json(resultado);
+            
+        }).catch(
+            function (erro) {
+                console.log(erro);
+                console.log("Houve um erro ao realizar a consulta! Erro: ", erro.sqlMessage);
+                res.status(500).json(erro.sqlMessage);
+            }
+        );
+}
+
 function entrar(req, res) {
     var email = req.body.emailServer;
     var senha = req.body.senhaServer;
@@ -102,5 +152,8 @@ module.exports = {
     entrar,
     cadastrar,
     listar,
-    testar
+    testar,
+    votacao,
+    atualizarVoto,
+    analise
 }

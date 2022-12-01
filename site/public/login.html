@@ -12,7 +12,7 @@
     
     <div class="main-container">
         <h1>Seja Bem-vindo(a)</h1>
-        <form id="register-form" >
+        <div class="box_container" id="register-form" >
            <div class="full-box">
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email" placeholder="Digite seu E-mail" data-min-length = "3">
@@ -24,11 +24,11 @@
            </div>
         
            <div class="full-box">
-            <button class="btn" onclick="cadastrar()">Entrar</button>
+            <button class="btn" onclick="entrar()">Entrar</button>
             
            </div> 
 
-        </form>
+        </div>
     </div>
     <p class="error-validation template"></p>
     <script src="./js/funcoes.js"></script>
@@ -39,23 +39,16 @@
 
 
     function entrar() {
-        aguardar();
+        
 
-        var emailVar = email_input.value;
-        var senhaVar = senha_input.value;
+        var emailVar = email.value;
+        var senhaVar = password.value;
 
         if (emailVar == "" || senhaVar == "") {
-            cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
-            finalizarAguardar();
+            
             return false;
         }
-        else {
-            setInterval(sumirMensagem, 5000)
-        }
-
-        console.log("FORM LOGIN: ", emailVar);
-        console.log("FORM SENHA: ", senhaVar);
+        
 
         fetch("/usuarios/autenticar", {
             method: "POST",
@@ -78,10 +71,10 @@
 
                     sessionStorage.EMAIL_USUARIO = json.email;
                     sessionStorage.NOME_USUARIO = json.nome;
-                    sessionStorage.ID_USUARIO = json.id;
+                    sessionStorage.ID_USUARIO = json.idusuario;
 
                     setTimeout(function () {
-                        window.location = "./dashboard/cards.html";
+                        window.location = "./votar.html";
                     }, 1000); // apenas para exibir o loading
 
                 });
@@ -92,7 +85,6 @@
 
                 resposta.text().then(texto => {
                     console.error(texto);
-                    finalizarAguardar(texto);
                 });
             }
 
@@ -103,8 +95,6 @@
         return false;
     }
 
-    function sumirMensagem() {
-        cardErro.style.display = "none"
-    }
+    
 
 </script>

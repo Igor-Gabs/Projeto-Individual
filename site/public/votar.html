@@ -29,9 +29,14 @@
             <a href="cadastro.html"><button  class="cadastro">Cadastro</button></a>
         </div>
     </nav>
-    <!--Final da NAVBA
+
+
+    <script src="./js/votacao.js"></script>
+
+    <!--Final da NAVBA-->
 
        <!-- Votação -->
+
        <div class="conteudo">
         <div class="nivel">
 
@@ -41,13 +46,13 @@
         </div>
         <div class="select">
             <select name="" id="sel_vot">
-                <option value="culinaria">Culinária</option>
-                <option value="religiao">Religião</option>
-                <option value="esportes">Esportes</option>
-                <option value="periodo edo">Período Edo</option>
-                <option value="animes/manga">Animes/Mangas</option>
+                <option value="1">Culinária</option>
+                <option value="2">Religião</option>
+                <option value="3">Esportes</option>
+                <option value="5">Animes/Mangas</option>
+                <option value="4">Periodo Edo</option>
             </select>
-            <button>Votar!</button>
+            <button onclick="votacao()">Votar!</button>
         </div>
         <div class="resultado">
             <div class="box">
