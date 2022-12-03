@@ -72,6 +72,15 @@ nav{
      width: 100%;
      
  }
+ .buttom p {
+   
+   color: #000000;
+
+   font-size: 23px;
+
+   margin-right: 38px;
+
+ }
  
  .login{
      padding: 10px 40px;
