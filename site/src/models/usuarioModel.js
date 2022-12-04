@@ -38,7 +38,7 @@ function atualizarVoto(voto, usuario) {
 
 function analise() {
     var instrucao = `
-    select nome, qtdVotos from Votos order by qtdVotos desc limit 1;
+    select nome, qtdVotos from Votos order by qtdVotos desc ;
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);

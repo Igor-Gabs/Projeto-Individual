@@ -40,16 +40,23 @@ function atualizarVoto(id){
     })
 }
 
+var analysis = []
+
 function analise(){
     fetch("/usuarios/analise").then(function(resposta){
         if(resposta.ok){
             resposta.json().then((response)=>{
-                mais_votado.innerHTML = response[0].nome
-                qtd_votos.innerHTML = response[0].qtdVotos
+                for(var i = 0; i < response.length; i++){
+                analysis.push({
+                nome:  response[0].nome,
+                votos: response[0].qtdVotos
             })
         }
-    })
-
+                mais_votado.innerHTML = analysis[0].nome
+                qtd_votos.innerHTML = analysis[0].votos
+        })
+    }
+})
 }
 
 analise()

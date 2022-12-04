@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+/* Navbar */
+nav{
+    display: flex;
+    
+    justify-content: space-between;
+ 
+    margin-top: 20px;
+ 
+    align-items: center;
+ 
+    color: #202020;
+ }
+ .logo{
+     font-weight: 800;
+ 
+     font-size: 25px;
+ 
+     justify-content: start;
+ 
+     margin-left: 10px;
+ 
+     display: flex;
+ 
+     align-items: center;
+ 
+     width: 300px;
+ 
+     height: 100%;
+ 
+    
+ }
+ .nav-itens{
+     list-style: none;
+ 
+     display: flex;
+ }
+ 
+ .nav-itens>li>a{
+     /* padding-right: 50px; */
+     margin-right: 50px;
+ 
+     color: #202020;
+ 
+     text-decoration: none ;
+     
+     position: relative;
+ }
+ 
+ .nav-itens>li>a::after{
+     content: " ";
+ 
+     width: 0%;
+ 
+     height:4px;
+ 
+     background-color: #000000;
+ 
+     position: absolute;
+ 
+     bottom: -5px;
+ 
+     left: 0;
+ 
+     transition: 0.4s ease-in-out;
+ 
+     
+ }
+ .nav-itens>li>a:hover::after{
+     width: 100%;
+     
+ }
+ 
+ .login{
+     padding: 10px 40px;
+ 
+     font-size: 15px;
+ 
+     border: none;
+ 
+     border-radius: 5px;
+ 
+     color: #202020;
+ 
+     background-color: #dcdcdc;
+ 
+     cursor: pointer;
+ 
+     transition: 1s background;
+ }
+ 
+ .buttom{
+     width: 300px;
+ 
+     height: 100%;
+ 
+     display: flex;
+ 
+     align-items: center;
+ 
+     justify-content: center;
+ 
+     gap: 10px;
+ }
+ 
+ .login:hover{
+     background-color: #a1a1a1;
+ 
+     transition: 1s background;
+ }
+ 
+ .cadastro{
+     padding: 10px 40px ;
+ 
+     font-size: 15px;
+ 
+     border: none;
+ 
+     border-radius: 5px;
+ 
+     color: #fff;
+ 
+     background-color: #202020;
+ 
+     cursor: pointer;
+ 
+     transition: 1s background;
+     
+     
+     
+ }
+ 
+ .cadastro:hover{
+     background-color: #3d3d3d;
+ 
+     transition: 1s background;
+ 
+ }
+ /* Final da Navbar */
