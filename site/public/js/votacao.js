@@ -1,6 +1,14 @@
 function votacao(){
     var voto = sel_vot.value
 
+    var fkvoto = sessionStorage.getItem('FK_USUARIO')
+
+    if(fkvoto != 'null'){
+        alert('Você ja votou!')
+        return false;
+    }
+
+
     fetch("/usuarios/votacao",{
         
         method: "PUT",
@@ -16,9 +24,12 @@ function votacao(){
             console.log("funciona") 
             atualizarVoto(voto)
             analise()
+            sessionStorage.FK_USUARIO = voto
         }
     })
 }
+
+name_user.innerHTML = `${sessionStorage.getItem('NOME_USUARIO')}`
 
 function atualizarVoto(id){
     var usuario = sessionStorage.getItem('ID_USUARIO')
