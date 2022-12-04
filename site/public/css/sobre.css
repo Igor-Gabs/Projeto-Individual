@@ -148,3 +148,105 @@ nav{
  
  }
  /* Final da Navbar */
+
+ /* Conteudo */ 
+ .conteudo{
+
+    height: 87vh;
+
+    background-image: url(../assets/temple.jpg);
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    text-align: center;
+
+    margin-top: 20px;
+
+ }
+
+ .nivel{
+    display: flex;
+
+    align-items: center;
+
+    /* justify-content: center; */
+
+    flex-direction: column;
+
+    gap: 35px;
+
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0.468);
+
+ }
+/* Fim do Cnteudo */
+
+
+/* Texto */
+h1{
+    color: #252525;
+
+    font-size: 50px;
+
+}
+h2{
+    margin-top: 20px;
+    /* gap: 60px; */
+    color: #252525;
+
+    font-size: 30px;
+
+}
+
+#sub{
+    color: #252525;
+
+    font-weight: 700;
+}
+
+p{
+    font-size: 18px;
+    
+    color: #252525;
+}
+/* Boxes */
+.boxes{
+    display: flex;
+
+    justify-content: center;
+
+    margin: 10px;
+}
+
+.caixa{
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-around;
+
+    margin:0 10px ;
+
+    padding: 15px;
+}
+/* Imagens */
+
+.caixa img{
+    position: relative;
+
+    border-radius: 20px;
+
+    width: 300px;
+     transition: all 0.6s
+     cubic-bezier(0.165,0.84,0.44,1);
+} 
+
+.caixa img:hover{
+    transform: scale(105%);
+}
+
+
+
