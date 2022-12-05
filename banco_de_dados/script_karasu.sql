@@ -30,10 +30,25 @@ foreign key(fkusuario) references usuario(idusuario)
 
 insert into votos values
 (null, 0,'culinaria'),
-(null, 0,'religia	o'),
+(null, 0,'religiao'),
 (null, 0,'esportes'),
 (null, 0,'periodo Edo'), 	
 (null, 0,'animes/manga'); 
 
+use karasu;
+select idVotos from votos order by idVotos desc limit 1;
+select * from votos;
+select * from usuario;
+select nome, qtdVotos from Votos order by qtdVotos desc limit 1;
 
-select * from usuario
+-- insert = post
+-- update = put
+-- select = get
+-- delete = delete
+
+select * from usuario;
+
+select idVotos from votos order by idVotos desc limit 1;
+
+update votos set qtdVotos = (qtdVotos + 1) where idvotos = 1 ;
+update votos set qtdVotos = (qtdVotos + 1) where idvotos = 2 ;
